@@ -73,7 +73,7 @@ title = "Xiaomi Mi 9 - XNU"
 # Note the 52 MiB hole 0xBBC00000..0xC0000000 between the low and mid banks.
 # dram-base stays 0xC0000000 (the contiguous 3 GiB mid bank, carve-out free);
 # dram-size is the total the ADT advertises, i.e. up to the top of DRAM.
-dram_size = "0x200000000"
+dram_size = "0x2c0000000"
 # panic_screen = true would run scripts/patch-xnu-entry-probe.py, which the
 # pinned UniXNU commit (b6ae99c) does not ship, so the payload step would fail.
 # Panics are still visible two ways: the screen (sweetfb_noconsole=0) and the
